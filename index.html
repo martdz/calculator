@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="calculator.css">
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto:400,700" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.17.0/math.min.js"></script>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="4">Electronic Calculator</th>
+				</tr>
+					<tr><td colspan="4" id="answer"></td></tr>
+					<tr><td colspan="4" id="memory"></td></tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><button  id="ac">AC</button></td>
+					<td><button  id="ce">CE</button></td>
+					<td><button value="/" id = "divide" class="op">&divide;</button></td>
+					<td><button value="*" id = "times" class="op">&times;</button></td>
+				</tr>
+				<tr>
+					<td><button value="7">7</button></td>
+					<td><button value="8">8</button></td>
+					<td><button value="9">9</button></td>
+					<td><button value="-" id = "minus" class="op">-</button></td>
+				</tr>
+				<tr>
+					<td><button value="4">4</button></td>
+					<td><button value="5">5</button></td>
+					<td><button value="6">6</button></td>
+					<td><button value="+" id = "plus" class="op">+</button></td>
+				</tr>
+				<tr>
+					<td><button value="1">1</button></td>
+					<td><button value="2">2</button></td>
+					<td><button value="3">3</button></td>
+					<td rowspan="2"><button value="=" id="equal">=</button></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button value="0" class="not-repeat zero">0</button></td>
+					<td><button value="." id="dot" class="not-repeat dot">.</button></td>
+				</tr>
+			</tbody>
+		</table>
+	<script src="calculator.js"></script>
+	</body>
+</html>	
